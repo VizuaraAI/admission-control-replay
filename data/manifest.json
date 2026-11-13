@@ -1,0 +1,28 @@
+{
+ "file": "thinking_long.jsonl",
+ "description": "622 requests of the Qwen-Bailian Thinking trace: prompt length p, clipped output length L, trace output length L_raw, and the prompt's 16-token block hashes h. No text. Built by tools/make_requests.py.",
+ "source": {
+  "repository": "github.com/alibaba-edu/qwen-bailian-usagetraces-anon",
+  "commit": "5f7439c51ec248a0c585f7d90a41a6f57773b912",
+  "file": "qwen_thinking_blksz_16.jsonl",
+  "sha256": "41ac36d9d1b54d084eeb6b05e9d142ba9d02f8bf79cfc9fff418d8ab7cdee906",
+  "licence": "Apache-2.0",
+  "licence_url": "https://www.apache.org/licenses/LICENSE-2.0"
+ },
+ "steps": [
+  "keep output_length > 0 and input_length + min(output_length, 16000) <= 40896; shuffle with random.Random(34); keep the first 1,500 (sha256 f243ce58dbbf9df1a1e3768ad55eae21bed62b8b6bfa66f9bc3752f0fea30ec3)",
+  "keep, in the same order, L_raw >= 2000; 622 requests; i_exp01 is each request's position in the 1,500"
+ ],
+ "modifications": "Only input_length, output_length and hash_ids are kept, renamed p, L_raw and h; L is L_raw clipped at 16,000.",
+ "traces": {
+  "thinking_long": {
+   "rows_in": 1500,
+   "written": 622,
+   "p_mean": 3245.0369774919614,
+   "L_clipped_mean": 6282.020900321543,
+   "L_median": 4085,
+   "memtime_tokens_steps_mean": 42859083.11334405,
+   "out_sha256": "1966241ffa366f8420aae54875bdea11fbad37c6977d366c8b4d49b591499939"
+  }
+ }
+}

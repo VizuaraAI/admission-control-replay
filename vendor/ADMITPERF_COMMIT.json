@@ -1,0 +1,18 @@
+{
+ "repository": "https://github.com/harshuljain13/AdmitPerf",
+ "commit": "5bcb81c30ba5639c3d2c35ff91b5a937436cc751",
+ "licence": "MIT (vendor/ADMITPERF_LICENSE)",
+ "upstream_path": "src/admitperf",
+ "vendored": "admitperf/__init__.py and admitperf/core, unmodified; standard library only",
+ "sha256": {
+  "__init__.py": "13fdb3f618d04202f5a93b1e1100cf33d60f460aa1e23bd50e7865b61afd8733",
+  "core/__init__.py": "81d4234bf8476eb4da918e548e64a709b522403e775a90f4f035996cc20d0bb7",
+  "core/decision.py": "3caa859a50b61d918b92bb53274ca0557992a7207262e04346118b8733ec2eec",
+  "core/log.py": "f0e9ed01abecf142210f1ebbc6dfdf7f1be764e2c55a5f9a779a4f8a509e3da5",
+  "core/policy.py": "8136e76314a68927b691cb09acb374c39809e6de70b362799ea554e8cc38afb1",
+  "core/reasons.py": "beedd217f1af50f14cbc5b53fa0727e74b7d322789d7841e5057b18b57e1b9da",
+  "core/signal.py": "7eb45a49a9543c797999f526016883a9493dbbba9c36976896ef37910addb315",
+  "core/signals.py": "650f215261a44409778c8da7af9e9cf0454b543b5fc7e1f2eb14c23179999fbe",
+  "core/verdict.py": "a7aa0c460581d31f5375c1cbf535f690bb047816e4b3b3fb1412206c7f7888bb"
+ }
+}
